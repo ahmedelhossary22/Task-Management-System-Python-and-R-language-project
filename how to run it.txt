@@ -1,0 +1,57 @@
+🟢 METHOD 1 — Using Docker (BEST & EASIEST) 🐳
+
+👉 Recommended (no setup problems)
+
+📦 What you send to your friend
+Project folder OR GitHub link
+Must include:
+docker-compose.yml
+Dockerfile
+💻 On the other laptop
+1. Install:
+Docker Desktop
+2. Open project folder in terminal
+cd task_manager
+3. Run:
+docker-compose up --build
+4. Open browser:
+http://localhost:8000/docs
+
+👉 API works ✅
+👉 Frontend HTML files also work ✅
+
+🎯 🟢 METHOD 2 — Without Docker (Manual Setup)
+
+👉 Works but needs more steps
+
+💻 On the other laptop
+1. Install:
+Python (same version preferably) i use Python 3.14.0
+2. Open project folder
+cd task_manager
+3. Create virtual environment
+python -m venv .venv
+4. Activate it
+Windows:
+.venv\Scripts\activate
+5. Install requirements
+pip install -r requirements.txt
+6. Run server
+uvicorn app.main:app --reload
+7. Open:
+http://127.0.0.1:8000/docs
+ IMPORTANT (DATABASE)
+
+ If you use SQLite:
+
+Send the .db file
+OR
+Let it auto-create
+ FRONTEND
+
+ Just open:
+
+frontend/login.html
+
+
+
