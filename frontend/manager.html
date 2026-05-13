@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+if (!localStorage.getItem("token")) {
+    window.location.href = "login.html";
+}
+</script>
+
+<h2>Manager Dashboard </h2>
+
+<button onclick="logout()">Logout</button>
+
+<h3>Projects</h3>
+<button onclick="loadProjects()">View Projects</button>
+<ul id="projects"></ul>
+
+<h3>Tasks</h3>
+<button onclick="createTask()">Assign Task</button>
+<button onclick="loadTasks()">Monitor Tasks</button>
+<ul id="tasks"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
