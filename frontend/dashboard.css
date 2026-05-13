@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.metric {
+  text-align: center;
+  flex: 1;
+}
+
+.metric h2 {
+  margin: 0;
+  color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.healthy {
+  color: green;
+}
+
+.unhealthy {
+  color: red;
+}
+#errors {
+  color: #dc3545;
+}

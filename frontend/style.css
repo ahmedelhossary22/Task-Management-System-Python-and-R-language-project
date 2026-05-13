@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h2 {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    padding: 20px;
+}
+
+/* Inputs */
+input, select, button {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Task title */
+.card h4 {
+    margin: 0;
+}
+
+/* Small text */
+.card p {
+    margin: 5px 0;
+    color: #555;
+}

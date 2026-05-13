@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script>
+if (!localStorage.getItem("token")) {
+    window.location.href = "login.html";
+}
+</script>
+
+<h2>Admin Dashboard </h2>
+
+<button onclick="logout()">Logout</button>
+<h3>Users</h3>
+<button onclick="createUser()">Create User</button>
+<button onclick="loadUsers()">Load Users</button>
+<button onclick="getUserPrompt()">Get User By ID</button>
+<button onclick="updateUserPrompt()">Update User</button>
+<button onclick="deleteUserPrompt()">Delete User</button>
+
+<div id="users"></div>
+
+<h3>Projects</h3>
+<button onclick="createProject()">Create Project</button>
+<button onclick="loadProjects()">Load Projects</button>
+<button onclick="getProjectPrompt()">Get Project By ID</button>
+<button onclick="updateProjectPrompt()">Update Project</button>
+<button onclick="deleteProjectPrompt()">Delete Project</button>
+<ul id="projects"></ul>
+
+<h3>Tasks</h3>
+<button onclick="createTask()">Create Task</button>
+<button onclick="loadTasks()">Load Tasks</button>
+<button onclick="getTaskPrompt()">Get Task By ID</button>
+<button onclick="showFilterForm()">Get specific Tasks</button>
+<button onclick="updateTaskPrompt()">Update Task</button>
+<button onclick="deleteTaskPrompt()">Delete Task</button>
+<ul id="tasks"></ul>
+
+<h3>Monitoring Dashboard</h3>
+<button onclick="goToDashboard()">Monitoring Dashboard</button>
+<ul id="tasks"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>

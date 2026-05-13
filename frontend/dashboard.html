@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Monitoring Dashboard</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1> Monitoring Dashboard</h1>
+
+  <button onclick="loadData()"> Refresh</button>
+
+  <div class="card">
+    <h3>System Metrics</h3>
+    <div class="metrics">
+      <div class="metric">
+        <p>Requests</p>
+        <h2 id="requests">0</h2>
+      </div>
+      <div class="metric">
+        <p>Errors</p>
+        <h2 id="errors">0</h2>
+      </div>
+      <div class="metric">
+        <p>Error Rate</p>
+        <h2 id="errorRate">0</h2>
+      </div>
+      <div class="metric">
+        <p>Avg Time</p>
+        <h2 id="avgTime">0</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Recent Logs</h3>
+    <ul id="logs"></ul>
+  </div>
+
+  <div class="card">
+    <h3>System Health</h3>
+    <p class="status" id="healthStatus"></p>
+    <button onclick="window.location.href='admin.html'">⬅ Back to Admin</button>
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
+<!-- # frontend/dashboard.html work this page  -->
