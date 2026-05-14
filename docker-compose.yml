@@ -1,0 +1,20 @@
+services:
+  app:
+    build: .
+    container_name: task_manager_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./task_manager.db:/app/task_manager.db
+    depends_on:
+      - redis
+    environment:
+      - DOCKER_ENV=true
+      - SECRET_KEY=your-very-secret-key-here
+
+  redis:
+    image: redis:7
+    container_name: task_manager_redis
+    ports:
+      - "6379:6379"
